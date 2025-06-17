@@ -6,12 +6,21 @@
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif';
 }
 body {
-  background-color: #f5f5f5;
+  background-image : url('../img/fundo.jpg'); /* Imagem de fundo */
+  background-size: 100% 100%;     /* Mostra a imagem inteira, sem cortes */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f0f0f0;    /* Cor de fallback para espaços vazios */
+  margin: 0;
+  min-height: 100vh;
   color: #333;
   line-height: 1.6;
-  padding: 20px;
+  padding: 0x 0px;
   max-width: 1200px;
   margin: 0 auto;
+  margin: 0;                /* Remove margens padrão do navegador */
+  min-height: 100vh;
+  min-width: 100%;
 }
 
 /*Cabeçalho*/
@@ -21,14 +30,52 @@ header {
     padding: 0px 0;
     background-color: #6D5644 /* Cor de fundo do cabeçalho */;
     color: #D7CAC1; /* Cor do texto do cabeçalho */
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(#523F31);
+    padding: 0%;
+    border-radius: 0%;
+    box-shadow: 0 0px 0px rgba(#D7CAC1);
 }
-header h2 {
-    font-size: 2.em;
-    color: #D7CAC1; /* Cor do título */
-    margin-bottom: 10px;
-    font-family: Lilita One, cursive;
+
+.header-container {
+    display: flex;          /* Usa Flexbox para alinhar a logo e o texto */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    gap: 20px;              /* Espaçamento entre a logo e o texto */
+}
+
+.logo {
+    width: 150px;           /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+}
+
+.header-text {
+    flex: 1;               /* Ocupa o espaço restante */
+}
+
+.menu {
+    display: flex;         /* Organiza os links do menu em linha */
+    gap: 45px;             /* Espaçamento entre os links */
+    margin-top: 40px;      /* Distância entre o h1 e o menu */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #D7CAC1;           /* Cor dos links */
+    font-weight: bold;
+}
+
+.intro-socio {
+    background-color: #9D8A7C; /* Marrom base */
+    padding: 20px;
+    margin: 30px 0;
+    color: #2D1E17; /* Cor do texto */
+    border: 03px solid #523F31; /* Borda escura em todos os lados */
+    box-shadow: 2px 2px 5px #523F31; /* Sombra sutil */
+    border-radius: 10px; /* Cantos arredondados */
+    max-width: 50%; /* Ou um valor fixo como 600px se preferir */
+}
+
+.introducao-sociologia h3 {
+    color: white; /* Título em branco */
+    margin-top: 0;
 }
 
 /* Navegação */
@@ -63,41 +110,21 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #6D5644;
 }
-
-/* Conteúdo principal */
+/* Estilo para o conteúdo principal */
 main {
-    background-color: white;
-    padding: 30px;
+    padding: 20px;
+    background-color: #ffffff; /* Cor de fundo do conteúdo principal */
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #6D5644;
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-}
 
-p {
-    margin-bottom: 20px;
-}
 
-ul {
-    margin-left: 30px;
-    margin-bottom: 20px;
-}
 
-li {
-    margin-bottom: 10px;
-}
 
-hr {
-    border: 0;
-    height: 1px;
-    background-color: #ddd;
-    margin: 30px 0;
-}
 
+
+/* Estilo para citações */
 blockquote {
     font-style: italic;
     padding: 20px;
