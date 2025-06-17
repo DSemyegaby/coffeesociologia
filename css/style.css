@@ -1,0 +1,130 @@
+/*reset e estilos básicos*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif';
+}
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*Cabeçalho*/
+header {
+    text-align: left;
+    margin-bottom: 0px;
+    padding: 0px 0;
+    background-color: #6D5644 /* Cor de fundo do cabeçalho */;
+    color: #D7CAC1; /* Cor do texto do cabeçalho */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(#523F31);
+}
+header h2 {
+    font-size: 2.0em;
+    color: #D7CAC1; /* Cor do título */
+    margin-bottom: 10px;
+    font-family: Lilita One, cursive;
+}
+
+/* Navegação */
+nav {
+    margin-bottom: 30px;
+    background-color: #6D5644; 
+    border-radius: 5px;
+    font-family: Concert One, cursive;
+    color: #D7CAC1; /* Cor do texto do menu */
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 30px;
+    color: #D7CAC1; /* Cor do texto do menu */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color:  #D7CAC1; /* Cor do texto do menu */;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+nav ul li a:hover {
+    background-color: #6D5644;
+}
+
+/* Conteúdo principal */
+main {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #6D5644;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 30px 0;
+}
+
+blockquote {
+    font-style: italic;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #6D5644;
+    margin: 20px 0;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #6D5644; /* Cor de fundo do rodapé */
+    color: #D7CAC1; /* Cor do texto do rodapé */
+    color: white;
+    border-radius: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+}
